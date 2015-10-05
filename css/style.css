@@ -1,7 +1,11 @@
 body {
 	font-family: 'PT Sans', sans-serif;
 width: 1200px;
+margin: 0;
+ padding: 0;
 }
+
+
 /*Меню*/
 .page-header {
 	background: #ffcd34;
