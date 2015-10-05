@@ -1,13 +1,22 @@
 body {
-	font-family: 'PT Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+padding: 0;
+margin: 0;
 width: 1200px;
 }
+/*фигня длявсего*/
+.container {overflow: hidden;
+
+}
 /*Меню*/
+.menu{overflow: hidden;
+}
 .page-header {
 	background: #ffcd34;
 	color: #000;
 	height: 75px;
 	width: 100%;
+
 	}
 .page-nav { 
 	overflow: hidden;
@@ -46,15 +55,15 @@ margin-top: -15px;}
 	}
 
 /*промоблок*/
+.promo_container{overflow: hidden;
+}
 .promo {
-	background-color:#ccc;
-	background-image: url(img/traktor.jpg);
+	background-image: url(../img/traktor.jpg);
 	background-repeat: no-repeat;
 	height: 500px;
 	margin: 0px;
 	width: 100%;
-	font-size: 0px;
-}
+		}
 .promo-title {
 	font-size: 44px;
 	color: white;
@@ -83,6 +92,8 @@ margin-top: -15px;}
 	padding: 10px 0;
 	}
 /*заказ*/
+.order-container {overflow: hidden;
+margin-top: -60px;}
 .order {
 	background-color: #202e3b;
 	height: 175px;}
@@ -94,27 +105,59 @@ margin-top: -15px;}
 	font-weight: normal;}
 
 /*Преимущества*/
-.advantages {background: white;}
-.row {overflow: hidden;}
+
+.advantages {
+	background: white;
+	height: 150px;
+	vertical-align: middle;
+	overflow: hidden;}
+
 .advantages-item {
-	float: left;
-	font-size: 13px;
-	width: 230px;
-	margin: 15px;
-	width: 225px;
+	width: 290px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
 	}
-.advantages-icon {
+.advantages-item p {
+	display: inline-block;
+	float: right;
+	margin-right: 15px;
+	font-size: 13px;}
+
+.tools {
+	background-position: 0 -186px;
+	margin: 10px;
 	width: 60px;
 	height: 60px;
-	display: block;
-	background-image: url(img/sprite.png);	
+	display: inline-block;
+	background-image: url(../img/sprite.png);	
+	float: left;
 }
-.tools {background-position: 0 -186px;}
-.worker{background-position: 0 -256px;}
-.border{background-position: 0 -46px; }
-.operator{background-position: 0 -116px;}
+.worker{background-position: 0 -256px;
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-image: url(../img/sprite.png);	
+	float: left;}
+.border{background-position: 0 -46px; 
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-image: url(../img/sprite.png);	
+	float: left;}
+.operator{
+	background-position: 0 -116px;
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-image: url(../img/sprite.png);	
+	float: left;}
 
 /*Спецпредложения*/
+
 .special-offers {
 	background-color: #f3f3f3;
 	height: 400px;
@@ -131,7 +174,7 @@ margin-top: -15px;}
 .subtitle {
 	font-size: 26px;
 	font-weight: bold;
-	}
+		}
 .technic-nav a { 
 	color: #202e3b;
 	line-height: 38px;
@@ -139,13 +182,16 @@ margin-top: -15px;}
 		}
 .technic-nav li {
 	list-style: none;
+	margin-left: -40px;
 	}	
 .offers {
 	float: left;
 	width: 700px;
 	}
+.offers .subtitle {margin-top:50px;}
 
 /*Цифры и отзывы*/
+
 .numbers-and-reviews{
 	height: 435px;
 	clear: both;
@@ -209,9 +255,11 @@ margin-top: -15px;}
 }
 
 /*карта*/
+.map-container {overflow: hidden;}
 .map {height: 500px;
 background-color: #c6c4bd;}
 /*футер*/
+
 .page-footer {
 	background: #202e3b;
 	color: white;
@@ -235,7 +283,8 @@ margin-top: -15px;
 	margin-top: 15px;
 
 }
-.page-footer .main-nav {float: right;
+.page-footer .main-nav
+ {float: right;
 	}
 .page-footer .main-nav li {
 	list-style: none;
@@ -247,7 +296,7 @@ margin-top: -15px;
 	text-decoration: none;
 	font-size: 16px;
 }
-.page-footer .callback {
+.page-footer.callback {
 	color: #ffcd34;
 	width: 120px;
 	}
