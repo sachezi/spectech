@@ -5,34 +5,21 @@ margin: 0;
 min-width: 1200px;
 }
 /*фигня длявсего*/
-<<<<<<< HEAD
 .container {
 	width: 960px;
 	margin: 0 auto;
 
-=======
-.container {overflow: hidden;
->>>>>>> origin/master
 
 }
 /*Меню*/
 .menu{overflow: hidden;
-<<<<<<< HEAD
 	}
-=======
-}
->>>>>>> origin/master
 .page-header {
 	background: #ffcd34;
 	color: #000;
 	height: 75px;
 	width: 100%;
-<<<<<<< HEAD
 		}
-=======
-
-	}
->>>>>>> origin/master
 .page-nav { 
 	overflow: hidden;
 	}
@@ -70,12 +57,8 @@ margin-top: -15px;}
 	}
 
 /*промоблок*/
-<<<<<<< HEAD
 .promo_container{
 	overflow: hidden;
-=======
-.promo_container{overflow: hidden;
->>>>>>> origin/master
 	width: 960px;
 	margin: 0 auto;
 }
@@ -86,10 +69,7 @@ margin-top: -15px;}
 	background-size: cover;
 	height: 500px;
 	margin: 0 auto;
-<<<<<<< HEAD
 	width: 100%;
-=======
->>>>>>> origin/master
 			}
 .promo-title {
 	font-size: 44px;
@@ -121,16 +101,11 @@ margin-top: -15px;}
 	padding: 10px 0;
 	}
 /*заказ*/
-<<<<<<< HEAD
 .order-container {
 	width: 960px;
 	margin: -20px auto 0 auto;
 	overflow: hidden;
 
-=======
-.order-container {overflow: hidden;
-margin-top: -60px;
->>>>>>> origin/master
 }
 .order {
 	background-color: #202e3b;
@@ -150,7 +125,6 @@ margin-top: -60px;
 .advantages {
 	background: white;
 	height: 200px;
-<<<<<<< HEAD
 	}
 
 .advantages-item {
@@ -159,20 +133,6 @@ margin-top: -60px;
 	vertical-align: middle;
 	overflow: hidden;	}
 .advantages-item p {	
-=======
-}
-
-.advantages-item {
-	width: 290px;
-	display: inline-block;
-	vertical-align: middle;
-	overflow: hidden;
-	}
-.advantages-item p {
-	display: inline-block;
-	float: right;
-	margin-right: 15px;
->>>>>>> origin/master
 	font-size: 13px;}
 
 .tools {
@@ -239,12 +199,7 @@ margin-top: -60px;
 	}	
 .offers {
 	float: left;
-<<<<<<< HEAD
 		}
-=======
-	width: 700px;
-	}
->>>>>>> origin/master
 .offers .subtitle {margin-top:50px;}
 
 /*Цифры и отзывы*/
@@ -314,13 +269,9 @@ margin-top: -60px;
 }
 
 /*карта*/
-<<<<<<< HEAD
 .map-container {overflow: hidden;
 width: 960px;
 margin: 0 auto;}
-=======
-.map-container {overflow: hidden;}
->>>>>>> origin/master
 .map {height: 500px;
 background-color: #c6c4bd;}
 /*футер*/
@@ -363,11 +314,7 @@ margin-top: -15px;
 	text-decoration: none;
 	font-size: 16px;
 }
-<<<<<<< HEAD
 .page-footer .callback av{
-=======
-.page-footer.callback {
->>>>>>> origin/master
 	color: #ffcd34;
 		}
 
