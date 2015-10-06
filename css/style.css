@@ -2,22 +2,24 @@ body {
 font-family: 'PT Sans', sans-serif;
 padding: 0;
 margin: 0;
-width: 1200px;
+min-width: 1200px;
 }
 /*фигня длявсего*/
-.container {overflow: hidden;
+.container {
+	width: 960px;
+	margin: 0 auto;
+
 
 }
 /*Меню*/
 .menu{overflow: hidden;
-}
+	}
 .page-header {
 	background: #ffcd34;
 	color: #000;
 	height: 75px;
 	width: 100%;
-
-	}
+		}
 .page-nav { 
 	overflow: hidden;
 	}
@@ -55,29 +57,36 @@ margin-top: -15px;}
 	}
 
 /*промоблок*/
-.promo_container{overflow: hidden;
+.promo_container{
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
 }
 .promo {
 	background-image: url(../img/traktor.jpg);
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 	height: 500px;
-	margin: 0px;
+	margin: 0 auto;
 	width: 100%;
-		}
+			}
 .promo-title {
 	font-size: 44px;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 130px;
+	margin: 0 auto;
+
 }
 .promo-text {
 	font-size: 20px;
 	color: white;
 	width: 630px;
-	margin: 0 auto;
 	padding: 15px 0;
 	text-align: center;
+	margin: 0 auto;
 
 }
 .catalog-btn {
@@ -92,8 +101,12 @@ margin-top: -15px;}
 	padding: 10px 0;
 	}
 /*заказ*/
-.order-container {overflow: hidden;
-margin-top: -60px;}
+.order-container {
+	width: 960px;
+	margin: -20px auto 0 auto;
+	overflow: hidden;
+
+}
 .order {
 	background-color: #202e3b;
 	height: 175px;}
@@ -106,22 +119,20 @@ margin-top: -60px;}
 
 /*Преимущества*/
 
+.advantages-container {
+	width: 960px;
+	margin: 0 auto;}
 .advantages {
 	background: white;
-	height: 150px;
-	vertical-align: middle;
-	overflow: hidden;}
+	height: 200px;
+	}
 
 .advantages-item {
-	width: 290px;
+	width: 24%;
 	display: inline-block;
 	vertical-align: middle;
-	overflow: hidden;
-	}
-.advantages-item p {
-	display: inline-block;
-	float: right;
-	margin-right: 15px;
+	overflow: hidden;	}
+.advantages-item p {	
 	font-size: 13px;}
 
 .tools {
@@ -162,12 +173,14 @@ margin-top: -60px;}
 	background-color: #f3f3f3;
 	height: 400px;
 	width: 100%;
+	width: 960px;
+	margin: 0 auto;
 }
 .technic-nav {
 	float: left;
 	width: 250px;
-	padding-left:130px;
-	padding-top: 30px;'
+	padding-top: 20px;
+	padding-left: 20px;
 	text-align: left;
 	margin-right: 15px;
 	}
@@ -186,20 +199,21 @@ margin-top: -60px;}
 	}	
 .offers {
 	float: left;
-	width: 700px;
-	}
+		}
 .offers .subtitle {margin-top:50px;}
 
 /*Цифры и отзывы*/
 
 .numbers-and-reviews{
+	width: 960px;
+	margin: 0 auto;
 	height: 435px;
 	clear: both;
 	background: #202e3b;
 	overflow: hidden;
 }
 .numbers{
-	margin-left: 130px;
+	margin: 10px;
 	float: left;
 	width: 270px;
 	vertical-align: left;
@@ -227,7 +241,7 @@ margin-top: -60px;}
 
 .reviews {float: left;
 	width: 620px;
-	}
+		}
 .rewievs-item {vertical-align: top;
 	margin-bottom: 40px;
 	
@@ -255,16 +269,20 @@ margin-top: -60px;}
 }
 
 /*карта*/
-.map-container {overflow: hidden;}
+.map-container {overflow: hidden;
+width: 960px;
+margin: 0 auto;}
 .map {height: 500px;
 background-color: #c6c4bd;}
 /*футер*/
 
 .page-footer {
+	width: 960px;
+	margin: 0 auto;
 	background: #202e3b;
 	color: white;
 	height: 75px;
-	width: 100%;
+
 	}
 .page-nav { 
 	overflow: hidden;
@@ -296,10 +314,9 @@ margin-top: -15px;
 	text-decoration: none;
 	font-size: 16px;
 }
-.page-footer.callback {
+.page-footer .callback av{
 	color: #ffcd34;
-	width: 120px;
-	}
+		}
 
 
 
