@@ -110,11 +110,13 @@ margin-top: -60px;
 
 /*Преимущества*/
 
+.advantages-container {
+	width: 960px;
+	margin: 0 auto;}
 .advantages {
 	background: white;
 	height: 200px;
-	vertical-align: middle;
-	overflow: hidden;}
+}
 
 .advantages-item {
 	width: 290px;
