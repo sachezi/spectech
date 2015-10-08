@@ -4,54 +4,47 @@ padding: 0;
 margin: 0;
 min-width: 1200px;
 }
-/*фигня длявсего*/
-<<<<<<< HEAD
-.container {
-	width: 960px;
-	margin: 0 auto;
-
-=======
-.container {overflow: hidden;
->>>>>>> origin/master
 
 }
 /*Меню*/
-.menu{overflow: hidden;
-<<<<<<< HEAD
+.menu{
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
 	}
-=======
-}
->>>>>>> origin/master
 .page-header {
 	background: #ffcd34;
 	color: #000;
 	height: 75px;
 	width: 100%;
-<<<<<<< HEAD
 		}
-=======
-
-	}
->>>>>>> origin/master
-.page-nav { 
+.page-header .page-nav { 
+	margin-top: -50px;
 	overflow: hidden;
+	
 	}
-.logo img {float: left;
-margin-top: -15px;}
+.logo-img {
+margin-top: -25px;
+margin-right: 10px;}
+
+.page-header a {
+	text-decoration: none;
+	color: #000;}
+
 .logo {
 	font-size: 24px;
 	text-decoration: none;
 	color: black;
 	float: left;
-	margin-left: 130px;
+	
 	margin-right: 165px;
 	display: inline-block;
 	margin-top: 20px;
 	vertical-align: middle;
-
 }
 .main-nav {float: right;
-	}
+	box-sizing: border-box;
+}
 .main-nav li {
 	list-style: none;
 	margin-right: 30px;
@@ -67,15 +60,19 @@ margin-top: -15px;}
 	width: 120px;
 	text-align: center;
 	padding: 10px 25px;
-	}
+}
 
 /*промоблок*/
-<<<<<<< HEAD
+.promo:before {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 14px;
+background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD34 65%);
+	background-size: 35px 14px;
+}
 .promo_container{
 	overflow: hidden;
-=======
-.promo_container{overflow: hidden;
->>>>>>> origin/master
 	width: 960px;
 	margin: 0 auto;
 }
@@ -84,13 +81,10 @@ margin-top: -15px;}
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	height: 500px;
+	height: 470px;
 	margin: 0 auto;
-<<<<<<< HEAD
 	width: 100%;
-=======
->>>>>>> origin/master
-			}
+}
 .promo-title {
 	font-size: 44px;
 	color: white;
@@ -98,7 +92,6 @@ margin-top: -15px;}
 	text-align: center;
 	padding-top: 130px;
 	margin: 0 auto;
-
 }
 .promo-text {
 	font-size: 20px;
@@ -107,7 +100,6 @@ margin-top: -15px;}
 	padding: 15px 0;
 	text-align: center;
 	margin: 0 auto;
-
 }
 .catalog-btn {
 	display: block;
@@ -119,102 +111,149 @@ margin-top: -15px;}
 	text-align: center;
 	border: solid 2px #ffcd34;
 	padding: 10px 0;
-	}
+}
+
 /*заказ*/
-<<<<<<< HEAD
+.order:before
+	{content: "";
+display: block;
+margin: 0 auto;
+height: 14px;
+background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD34 65%);
+background-size: 35px 14px;
+}
 .order-container {
 	width: 960px;
 	margin: -20px auto 0 auto;
 	overflow: hidden;
-
-=======
-.order-container {overflow: hidden;
-margin-top: -60px;
->>>>>>> origin/master
 }
 .order {
 	background-color: #202e3b;
-	height: 175px;}
+	height: 175px;
+}
 .title {
 	font-size: 24px;
 	color: #ffcd34;
-	margin-left: 125px;
 	padding-top: 35px;
-	font-weight: normal;}
-
+	font-weight: normal;
+}
+.form_order {
+    padding: 0px;
+    margin: 0px;
+    border: medium none;
+}
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.form_column {
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.form_order input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #202E3B;
+    border: 1px solid #FFCD34;
+    border-radius: 0px;
+    color: #FFF;
+    font-size: 16px;
+    box-sizing: border-box;
+ }
+.form_order select {
+  	padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #202E3B;
+    border: 1px solid #FFCD34;
+    color: #FFF;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input.button-order {
+    background-color: #FFCD34;
+   color: #202E3B;
+    font-size: 16px;
+    font-weight: bold;
+ }
 /*Преимущества*/
 
 .advantages-container {
 	width: 960px;
-	margin: 0 auto;}
+	margin: 0 auto;
+}
 .advantages {
 	background: white;
-	height: 200px;
-<<<<<<< HEAD
-	}
-
-.advantages-item {
-	width: 24%;
-	display: inline-block;
+	height: 120px;
 	vertical-align: middle;
-	overflow: hidden;	}
-.advantages-item p {	
-=======
+	overflow: hidden;
 }
 
 .advantages-item {
-	width: 290px;
+	margin-top: 20px;
+	width: 24%;
 	display: inline-block;
 	vertical-align: middle;
-	overflow: hidden;
-	}
-.advantages-item p {
-	display: inline-block;
-	float: right;
-	margin-right: 15px;
->>>>>>> origin/master
-	font-size: 13px;}
+	overflow: hidden;	
+}
 
+.advantages-item p {	
+	font-size: 13px;
+}
 .tools {
-	background-position: 0 -186px;
-	margin: 10px;
-	width: 60px;
-	height: 60px;
+	background-position: 0 -150px;;
+	display: inline-block;
+	height: 40px;
+	width: 42px;
+	background-image: url(../img/sprite.png);	
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.worker{background-position: 0 -100px; 
+	width: 46px;
+	height: 50px;
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: 20px;
 	display: inline-block;
 	background-image: url(../img/sprite.png);	
 	float: left;
 }
-.worker{background-position: 0 -256px;
-	margin: 10px;
-	width: 60px;
-	height: 60px;
+.border{background-position: 0 -50px; 
+	margin-right: 10px;
+	width: 45px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 10px;
 	display: inline-block;
 	background-image: url(../img/sprite.png);	
-	float: left;}
-.border{background-position: 0 -46px; 
-	margin: 10px;
-	width: 60px;
-	height: 60px;
-	display: inline-block;
-	background-image: url(../img/sprite.png);	
-	float: left;}
+	float: left;
+}
 .operator{
-	background-position: 0 -116px;
-	margin: 10px;
-	width: 60px;
-	height: 60px;
+	background-position: 0 0;
+	width: 31px;
+	height: 50px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 10px;
 	display: inline-block;
 	background-image: url(../img/sprite.png);	
-	float: left;}
+	float: left;
+}
 
 /*Спецпредложения*/
+.special-offers-container {
+	width: 960px;
+margin: 0 auto;
+}
 
 .special-offers {
 	background-color: #f3f3f3;
 	height: 400px;
-	width: 100%;
-	width: 960px;
-	margin: 0 auto;
 }
 .technic-nav {
 	float: left;
@@ -223,36 +262,50 @@ margin-top: -60px;
 	padding-left: 20px;
 	text-align: left;
 	margin-right: 15px;
-	}
+}
 .subtitle {
 	font-size: 26px;
 	font-weight: bold;
-		}
+}
 .technic-nav a { 
 	color: #202e3b;
 	line-height: 38px;
 	font-size: 16px;
-		}
+}
 .technic-nav li {
 	list-style: none;
 	margin-left: -40px;
-	}	
-.offers {
-	float: left;
-<<<<<<< HEAD
-		}
-=======
-	width: 700px;
-	}
->>>>>>> origin/master
+}	
+.offers {float: left;}
 .offers .subtitle {margin-top:50px;}
+.table-offers {width: 600px; 
+border-collapse:collapse;
+margin:0px;}
+.table-offers td{ padding-left: 14px;}
+.table-offers tr { 	height: 35px; }
+.top-table {
+	font-weight: bold;
+	background-color: #dfdfdf;
+}
+.first-column-table {padding-right: 60px;}
+.white-line {background-color: #ffffff;}
 
 /*Цифры и отзывы*/
+.numbers-and-reviews:before {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 14px;
+background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD34 65%);
+	background-size: 35px 14px;}
 
-.numbers-and-reviews{
+
+.numbers-and-reviews-container{
 	width: 960px;
 	margin: 0 auto;
-	height: 435px;
+}
+.numbers-and-reviews{
+	height: 440px;
 	clear: both;
 	background: #202e3b;
 	overflow: hidden;
@@ -262,12 +315,12 @@ margin-top: -60px;
 	float: left;
 	width: 270px;
 	vertical-align: left;
-	margin-right: 50px;}
+	margin-right: 50px;
+}
 .numbers-and-reviews .subtitle {
 	color: #fff;
 	font-weight: normal;
 }
-
 .numbers-list { 
 	color: #9e9e9e;
 	font-size: 18px;
@@ -276,35 +329,32 @@ margin-top: -60px;
 	font-weight: bold;
 	margin: 0px;
 	padding: 0px;
-
 }
 .numbers-number{
 	color: #f1b132;
 	font-size: 38px;
 	font-weight: bold;
-	margin-right: 15px;}
-
+	margin-right: 15px;
+}
 .reviews {float: left;
 	width: 620px;
-		}
+}
 .rewievs-item {vertical-align: top;
 	margin-bottom: 40px;
-	
-	}
+}
 .rewievs-item img {
 	width: 114px;
  	float: left;
  	margin-right: 10px;
  	border: 3px solid #f1b132;
  	border-radius:2px;
- 	 	}
+}
 .rewievs-quote {
 	display: block;
 	font-size: 18px;
 	color: #fff;
 	font-style: italic;
-	
-	}
+}
 .rewievs-author {
 	font-size: 18px;
 	color: #f1b132;
@@ -312,65 +362,33 @@ margin-top: -60px;
 	margin-top: -5px;
 	font-style: normal;
 }
-
 /*карта*/
-<<<<<<< HEAD
-.map-container {overflow: hidden;
-width: 960px;
-margin: 0 auto;}
-=======
-.map-container {overflow: hidden;}
->>>>>>> origin/master
-.map {height: 500px;
-background-color: #c6c4bd;}
-/*футер*/
-
-.page-footer {
-	width: 960px;
+.map:before{
+	content: "";
+	display: block;
 	margin: 0 auto;
-	background: #202e3b;
-	color: white;
+	height: 14px;
+background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD34 65%);
+	background-size: 35px 14px;
+}
+
+/*футер*/
+.page-footer {
+	background: #202E3B;
+	color: #fff;
 	height: 75px;
-
-	}
-.page-nav { 
-	overflow: hidden;
-	}
-.page-footer .logo img {float: left;
-margin-top: -15px;
-}
-.page-footer .logo {
-	font-size: 24px;
+	width: 100%;
+		}
+.page-footer a {
 	text-decoration: none;
-	color: #ffcd34;
-	float: left;
-	margin-left: 130px;
-	margin-right: 165px;
-	display: inline-block;
-	margin-top: 15px;
-
-}
-.page-footer .main-nav
- {float: right;
-	}
-.page-footer .main-nav li {
-	list-style: none;
-	margin-right: 30px;
-	display: inline-block;
-}
+	color: #fff;}
 .page-footer .main-nav a {  
 	color: white;
 	text-decoration: none;
 	font-size: 16px;
 }
-<<<<<<< HEAD
-.page-footer .callback av{
-=======
-.page-footer.callback {
->>>>>>> origin/master
-	color: #ffcd34;
-		}
-
+.footercallback {
+	color: #FFCD34;}
 
 
 

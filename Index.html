@@ -8,21 +8,22 @@
   </head>
 
 <body>
-  <!--фигня для всего?-->
-  <div class="container">
+
   <!--меню-->
   <header class="page-header page-nav">
   <div class="menu">
   <a href="" class="logo">
-    <img src="img/logo.png" alt="" /><b>Спецтех</b>24</a>
+    <img src="img/logo.png" alt="" class="logo-img"/>
+    <strong>Спецтех</strong>24 
+  </a>
   <nav class="main-nav ">
-  	<ul>
-  		<li><a href="">О компании</a></li>
-  		<li><a href="">Каталог</a></li>
-  		<li><a href="">Портфолио</a></li>
-  		<li><a href="">Контакты</a></li>
-  		<li class="callback"><a href="">Заказать звонок</a></li>
-  	</ul>
+    <ul>
+      <li><a href="">О компании</a></li>
+      <li><a href="">Каталог</a></li>
+      <li><a href="">Портфолио</a></li>
+      <li><a href="">Контакты</a></li>
+      <li class="callback"><a href="">Заказать звонок</a></li>
+    </ul>
   </nav>
 </div>
 </header> 
@@ -39,11 +40,24 @@
   </section>
   </div>
 
-  <div class="order-container">
+<!--заказ-->
+ 
 <section class="order">
-
+  <div class="order-container">
 	<h2 class="title">Закажите бесплатную конcультацию по подбору подходящей техники</h2>
-	<action class="order-consult-form"></action>
+	<form action="" class="form_order">
+    <div class="row">
+      <div class="form_column">
+        <input placeholder="Как Вас зовут?" type="text">
+      </div>
+      <div class="form_column">
+        <input placeholder="Номер для связи" type="text">
+      </div>
+      <div class="form_column"> <select>
+        <option "deselect">Выберите дату</option> </select></div>
+   <div class="form_column"> <input class="button-order" value="Заказать консультацию" type="submit"> </div>
+    </div>
+  </form>
 
 </section>
   </div>
@@ -90,14 +104,44 @@
 	 </nav>
     <section class="offers">
     <h2 class="subtitle">Спецпредложение</h2>
-    <table></table>
+    <table class='table-offers'>
+      <tr class="top-table">
+      <td class="first-column-table">Позиция для аренды</td>
+      <td>За смену</td>
+      <td>За неделю </td>
+      <td>За месяц</td>
+    </tr>
+    <tr class="tr">
+      <td class="first-column-table">Мини-экскаватор CAT</td>
+      <td>5 000</td>
+      <td>25 000</td>
+      <td>60 000</td>
+    </tr>
+    <tr class="white-line">
+      <td class="first-column-table">Экскаватор VOLVO</td>
+      <td>3 000</td>
+      <td>15 000</td>
+      <td>40 000</td>
+    </tr>
+    <tr class="tr">
+      <td class="first-column-table">Грузовик VOLVO</td>
+      <td>5 000</td>
+      <td>25 000</td>
+      <td>60 000</td>
+    </tr>
+    <tr class="white-line">
+      <td class="first-column-table">Мини-экскаватор CAT</td>
+      <td>3 000</td>
+      <td>15 000</td>
+      <td>40 000</td>
+    </tr></table>
    </section>
   </div>
 </div>
  
 <!--Цифры и отзывы-->
 <div class="numbers-and-reviews">
-  <div class="numbers-and-reviews-container"></div>
+  <div class="numbers-and-reviews-container">
 	<section class="numbers">
 		<h2 class="subtitle"><b>Спецтех</b> в цифрах</h2>
       <ul class="numbers-list">
@@ -106,6 +150,7 @@
       	<li><span class="numbers-number">108</span>Единиц техники</li>
       	<li><span class="numbers-number">500+</span>Довольных клиентов</li> 
       </ul>
+      </div>
 	</section>
 
   <section class="reviews">
@@ -128,14 +173,16 @@
 </div>
 </div>
   
+<section class="map">
 <div class="map-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31980.426249969136!2d30.355744099999995!3d59.9358484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1442920366908" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen="no"></iframe></div> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31980.426249969136!2d30.355744099999995!3d59.9358484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1442920366908" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen="no"></iframe></div>
+</section> 
   
   </main> 
 
 <footer class="page-footer page-nav">
-  <div class="footer-container">
-  <a href="" class="logo">
+  <div class="page-footer-container">
+   <a href="" class="logo">
     <img src="img/logo.png" alt="" /><b>Спецтех</b>24</a>
   
   <nav class="main-nav ">
@@ -144,11 +191,11 @@
   		<li><a href="">Каталог</a></li>
   		<li><a href="">Портфолио</a></li>
   		<li><a href="">Контакты</a></li>
-  		<li><a href="" class="page-footer callback">Заказать звонок</a></li>
+  		<li class="footercallback"><a href="">Заказать звонок</a></li>
      
   	</ul>
   </nav>
-  </div>
+    </div>
 </footer>
 
 </div>
