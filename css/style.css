@@ -145,11 +145,12 @@ background-size: 35px 14px;
 .row {
     margin-left: -10px;
     margin-right: -10px;
+    overflow: hidden;
 }
 .form_column {
 	float: left;
 	padding: 10px;
-	box-sizing: border-box;
+	box-sizing:border-box;
 }
 .form_order input {
     padding: 10px 20px;
@@ -370,6 +371,121 @@ background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD
 	height: 14px;
 background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD34 65%);
 	background-size: 35px 14px;
+}
+
+
+/*портфолио меню*/
+.portfolio-nav:before{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 14px;
+background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD34 65%);
+	background-size: 35px 14px;
+}
+.portfolio-nav {
+	background-image: url(../img/portfoliobackground.jpg);
+	height: 105px;
+	vertical-align: middle;
+}
+
+.portfolio-container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.portfolio-nav .subtitle {
+	color: #ffcd34;
+	float: left;
+	margin-right: 210px;
+	font-weight: normal;
+	display: inline-block;
+	margin-top: 30px;
+}
+.portfolio-nav li {
+	list-style-type: none;
+	display: inline-block;
+	vertical-align: middle;
+margin-top: 25px;}
+.portfolio-nav a {
+	font-size: 16px;
+	color: #fff;
+	margin-right: 20px;}
+
+/*портфолио основной блок*/
+.porftolio-block{height: 500px;
+background-image: url(../img/portfoliohouse.jpg);
+background-size: cover;
+background-repeat: no-repeat;}
+.porftolio-block:before{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 10px;
+	background: #000;
+}
+.portfolio-block-container{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+.potrfolio-item-container{
+	margin-top: 100px;
+	width: 320px;
+	float: left;
+	background-color: #fff;
+	padding-right: 26px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+.potrfolio-subtitle {
+	font-size: 20px;
+	color: #202e3b;
+	font-weight: bold;}
+.potrfolio-item{
+	font-size: 14px;
+	color: #202e3b;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.portfolio-btn{
+	width: 125px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+	padding-left: 20px;
+	background-color: #ffcd34;
+	text-decoration: none;
+	color: #202e3b;
+margin-top: 20px;
+}
+.porftolio-block2{height: 500px;
+background-image: url(../img/Portfoliobackgrounditem2.jpg);
+background-size: cover;
+background-repeat: no-repeat;}
+.porftolio-block2:before{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 10px;
+	background: #000;
+}
+.porftolio-block3{height: 500px;
+background-image: url(../img/Portfoliobackgrounditem3.jpg);
+background-size: cover;
+background-repeat: no-repeat;}
+.porftolio-block3:before{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 10px;
+	background: #000;
 }
 
 /*футер*/
