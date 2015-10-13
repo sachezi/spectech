@@ -16,48 +16,55 @@ min-width: 1200px;
 	background: #ffcd34;
 	color: #000;
 	height: 75px;
-	width: 100%;
 }
 .page-header.page-nav { 
 	overflow: hidden;
 }
-.logo-img {
+#logo-img {
 	margin-top: -10px;
-	margin-right: 10px;}
-
+	margin-right: 10px;
+	display: inline-block;
+}
 .page-header a {
 	text-decoration: none;
 	color: #000;}
-
 .logo {
 	font-size: 24px;
 	text-decoration: none;
 	color: black;
 	float: left;
-	margin-right: 165px;
 	display: inline-block;
 	margin-top: 20px;
 }
 .main-nav {float: right;
-}
+overflow: hidden;}
 .main-nav li {
-	margin-top: 10px;
 	list-style: none;
-	margin-right: 30px;
+	padding: 15px;
+	margin-right: 20px;
 	display: inline-block;
+	border-style: hidden;
+	box-sizing:border-box;
+	transition: border 0 linear;
+}
+.main-nav li:hover{border:2px solid rgba(32,46,59,0.3);
 }
 .main-nav a {  
-	color: black;
+	color: rgba(0,0,0,0.55);
 	text-decoration: none;
 	font-size: 16px;
 	display: inline-block;
 }
-/*.main-nav a {
+.active-menu a{color: #000;}
+.callback {
 	background:rgba(255,255,255,0.5);
-	width: 120px;
 	text-align: center;
-	padding: 10px 25px;
-}*/
+	padding: 10px 25px 10px 25px;
+	border-style: hidden;
+	transition: background 1s ease;
+}
+.callback:hover {background:rgba(255,255,255,0.8);
+border-style: hidden;}
 
 /*промоблок*/
 .promo:before {
@@ -98,17 +105,24 @@ background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD
 	text-align: center;
 	margin: 0 auto;
 }
-.catalog-btn {
+.promo-btn {
 	display: block;
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	width: 220px;
-	margin: 0 auto;
+	margin: 30 auto;
 	text-align: center;
 	border: solid 2px #ffcd34;
-	padding: 10px 0;
+	padding-left: 10px;
+	padding-right: 26px;
+	padding-top: 12px;
+	padding-bottom: 16px;
 	text-decoration: none;
+	background-image: url(../img/arrowhite.png);
+	background-repeat: no-repeat;
+	background-position: 93% 55% ;
+	transition: background 1s ease;
 }
 
 /*заказ*/
@@ -124,10 +138,12 @@ background-size: 35px 14px;
 	width: 960px;
 	margin: -20px auto 0 auto;
 	overflow: hidden;
+
 }
 .order {
 	background-color: #202e3b;
 	height: 175px;
+	padding-bottom: 20px;
 }
 .title {
 	font-size: 24px;
@@ -178,7 +194,15 @@ input.button-order {
     font-weight: bold;
     height: 46px;
     width: 250px;
+    transition: background 0 ease;
  }
+.button-order:focus{background: #f6bf16;}
+.button-order:hover{background: #ffd966}
+
+ /*кастомизация селекта*/
+
+ 
+/*end*/
 /*Преимущества*/
 
 .advantages-container {
@@ -469,7 +493,10 @@ background-repeat: no-repeat;}
 	background-color: #ffcd34;
 	text-decoration: none;
 	color: #202e3b;
-margin-top: 20px;
+	margin-top: 20px;
+	background-image: url(../img/arrowblack.png);
+	background-repeat: no-repeat;
+	background-position: 85% 50%;
 }
 .porftolio-block2{height: 500px;
 background-image: url(../img/Portfoliobackgrounditem2.jpg);
@@ -494,6 +521,9 @@ background-repeat: no-repeat;}
 	height: 10px;
 	background: #000;
 }
+/*костыли для формы*/
+.portfolio-order .form_order input{height: 46px;}
+
 /*контакты-навигация*/
 
 .contacts-nav:before{
@@ -545,7 +575,9 @@ background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD
 	color: #202e3b;
 	display: inline-block;
 	margin-top: 25px;	
+	transition: background 0 linear;
 }
+.contact-btn:hover{background: #ffd966;}
 /*контакты карта*/
 
 .map-and-form {
@@ -564,15 +596,21 @@ background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD
 	float: left;
 	margin-right: 20px;
 }
+.phone {vertical-align: center;}
+.phone img{margin-top: 5px;}
+.mail img{margin-top: 5px;}
+
 .catalog-title{
 	font-size: 18px;
 	font-weight: bold;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-top: 0px;
+	display: inline-block;
 }
-.legend {
-	margin-top: 35px;
-	margin-bottom: 20px;
+
+legend {
+	margin-top: 0px;
+	margin-bottom:0px;
 	font-size: 16px;
 }
 .to-consalt {
@@ -582,7 +620,7 @@ background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD
 	margin-top: 10px;
 	padding: 10px;
 }
-.to-consalt-big {height: 75px;
+.to-consalt-big {height: 65px;
 	width: 280px;
 	border: 1px solid #d5d5d5;
 	margin-top: 10px;
@@ -613,7 +651,8 @@ padding-top: 35px;}
 	width: 25%;
 	box-sizing: border-box;
 	padding: 10px;}
-.rewievs-item-contacts-page img {margin-bottom: 15px;}
+.rewievs-item-contacts-page img {margin-bottom: 15px;
+border-radius: 50%}
 .rewievs-quote-contacts-page{
 	font-size: 14px;
 	font-style: italic;
@@ -807,14 +846,13 @@ display: table-row;}
 }
 .page-footer img {
 	margin-right: 10px;
-	margin-top: 5px;
+	margin-top: 25px;
 }
 .footer-logo p{
 	font-size: 24px;
 	text-decoration: none;
 	color: #ffcd34;
 	display: inline-block;
-	margin-top: 20px;
 }
 .footer-logo {float: left;}
 .page-footer a {
@@ -824,13 +862,21 @@ display: table-row;}
 	font-size: 16px;
 	display: inline-block;
 }
-.main-nav {float: right;}
+	
+}
+.page-footer li:hover{border:2px solid rgba(32,46,59,0.3);
+}
 .page-footer li {
 	margin-top: 10px;
 	list-style: none;
-	margin-right: 30px;
+	margin-right: 20px;
 	display: inline-block;
+	border-style: hidden;
+	box-sizing:border-box;
+	transition: border 0 linear;
 }
+.page-footer li:hover{border:2px solid rgba(255,255,255,0.3);}
+.footercallback {color: #ffcd34;}
 
 
 
