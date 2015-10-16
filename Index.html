@@ -5,8 +5,12 @@
     <title>Спецтех24</title>
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+ <script src="js/jquery-2.1.4.min.js"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script type="text/javascript">
+$('select').select2({minimumResultsForSearch: Infinity});
+</script>
   </head>
 
 <body>
@@ -55,13 +59,23 @@
         <input placeholder="Номер для связи" type="text">
       </div>
       <div class="form_column">
-        <script type="text/javascript">
-  $('select').select2();
+      
+     <select name="" class="form-item" type="date" >
+       <option>Выберите дату</option>
+    </select>
+   <script>
+$('.select2-container').css('height','40px');
+$('.select2-selection__rendered ').css('line-height','40px');
+$('.select2-container--default .select2-selection--single .select2-selection__arrow b').css('top', '67%');
+$('.select2-selection--single').css('outline','none');
+$('.select2-selection--single').css('height','40px');
 </script>
-
-       <select name="" id="myselect">
-        <option "deselect">Выберите дату</option> 
-      </select>
+<script src="js/jquery-2.1.4.min.js"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script type="text/javascript">
+$('select').select2({minimumResultsForSearch: Infinity});
+</script>
 
              </div>
       <div class="form_column"> <input class="button-order" value="Заказать консультацию" type="submit">
