@@ -10,63 +10,54 @@ min-width: 1200px;
 .menu{
 	overflow: hidden;
 	width: 960px;
-	margin: 0 auto;
-}
+	margin: 0 auto;}
 .page-header {
 	background: #ffcd34;
 	color: #000;
-	height: 75px;
-}
-.page-header.page-nav { 
-	overflow: hidden;
-}
-#logo-img {
-	margin-top: -10px;
+	height: 75px;}
+.logo-img {
+	margin-top: 10px;
 	margin-right: 10px;
-	display: inline-block;
-}
+	display: inline-block;}
 .page-header a {
-	text-decoration: none;
-	color: #000;}
+	text-decoration: none;}
 .logo {
 	font-size: 24px;
 	text-decoration: none;
 	color: black;
 	float: left;
 	display: inline-block;
-	margin-top: 10px;
-}
-.main-nav {float: right;
-overflow: hidden;}
+	margin-top: 10px;}
+.main-nav {float: right;}
 .main-nav li {
 	list-style: none;
 	padding: 10px;
-	margin-right: 20px;
+	margin-right: 5 px;
 	display: inline-block;
-	border:2px solid rgba(32,46,59,0.3);
-	border-style: hidden;
-	transition: border 0 linear;
+	margin-top: -10px;
 }
-.main-nav li:hover{border:2px solid rgba(32,46,59,0.3);
-}
-.main-nav a {  
+.main-nav-link {  
 	color: rgba(0,0,0,0.55);
 	text-decoration: none;
 	font-size: 16px;
 	display: inline-block;
 	border:2px solid rgba(32,46,59,0.3);
 	border-style: hidden;
-}
-.active-menu a{color: #000;}
+border:2px solid transparent;
+	transition: border 0 linear;
+padding: 10px;}
+.main-nav-link:hover{border:2px solid rgba(32,46,59,0.3);}
+.main-nav-link:active {border:2px solid rgba(32,46,59,0.6);}
+.active-menu {color: #000;}
 .callback {
 	background:rgba(255,255,255,0.5);
 	text-align: center;
+	color: rgba(0,0,0,0.55);
 	padding: 10px 25px 10px 25px;
-	border-style: hidden;
-	transition: background 1s ease;
-}
+border:2px solid transparent;
+	transition: background 1s ease;}
 .callback:hover {background:rgba(255,255,255,0.8);
-border-style: hidden;}
+	border:2px solid transparent;}
 
 /*промоблок*/
 .promo:before {
@@ -75,13 +66,11 @@ border-style: hidden;}
 	margin: 0 auto;
 	height: 14px;
 background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD34 65%);
-	background-size: 35px 14px;
-}
+	background-size: 35px 14px;}
 .promo_container{
 	overflow: hidden;
 	width: 960px;
-	margin: 0 auto;
-}
+	margin: 0 auto;}
 .promo {
 	background-image: url(../img/traktor.jpg);
 	background-repeat: no-repeat;
@@ -89,31 +78,28 @@ background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD
 	background-size: cover;
 	height: 470px;
 	margin: 0 auto;
-	width: 100%;
-}
+	width: 100%;}
 .promo-title {
 	font-size: 44px;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 130px;
-	margin: 0 auto;
-}
+	margin: 0 auto;}
 .promo-text {
 	font-size: 20px;
 	color: white;
 	width: 630px;
 	padding: 15px 0;
 	text-align: center;
-	margin: 0 auto;
-}
+	margin: 0 auto;}
 .promo-btn {
 	display: block;
 	color: white;
 	font-size: 16px;
 	font-weight: bold;
 	width: 220px;
-	margin: 30 auto;
+	margin: 0 auto;
 	text-align: center;
 	border: solid 2px #ffcd34;
 	padding-left: 10px;
@@ -124,9 +110,9 @@ background-image: linear-gradient(135deg, #FFCD34 35%, #000 35%, #000 65%, #FFCD
 	background-image: url(../img/arrowhite.png);
 	background-repeat: no-repeat;
 	background-position: 93% 55% ;
-	transition: background 1s ease;
-}
-
+	transition: background 1s ease;}
+.promo-btn:hover{border: solid 2px #ffd966;}
+.main-nav li:active {border:2px solid #ffe390;}
 /*заказ*/
 .order:before
 	{content: "";
@@ -198,6 +184,7 @@ input.button-order {
     width: 250px;
     transition: background 0 ease;
  }
+
 .button-order:focus{background: #f6bf16;}
 .button-order:hover{background: #ffd966}
 
@@ -764,12 +751,15 @@ padding: 20px;}
 	margin-bottom: 20px;
 }
 
-.technic-nav-catalog a {
+.technic-nav-catalog-link {
 	font-size: 16px;
 	color: #353535;
+	text-decoration: none;
+	margin-bottom: 40px;
+
 }
 .download-catalog-btn {
-margin-top: 20px;
+margin-top: 40px;
 padding: 10px 32px;
 background-color: #354B60;
 color: white;
@@ -820,7 +810,7 @@ display: table-row;}
 .arenda {background-color: #F3C331;}
 .more {background-color: #354B60;}
 .catalog-item-new {position: relative;
-overflow: hidden;
+	overflow: hidden;
 	background-color: #fff;
 	padding: 25px 30px;
 	box-sizing: border-box;
@@ -828,8 +818,7 @@ overflow: hidden;
 	width: 290px;
 	vertical-align: top;
 	margin-right: 20px;
-	margin-bottom: 20px;
-}
+	margin-bottom: 20px;}
 .new {
 transform: rotate(45deg);
 position: absolute;
@@ -839,10 +828,10 @@ display: block;
 background-color: #00c22e;
 font-weight: bold;
 width: 85px;
-padding: 10px;
+padding: 5px;
 text-align: center;
 color: #fff;
-}
+font-size: 14px;}
 
  /*нумерация страниц*/
 .page-number {
@@ -883,8 +872,7 @@ margin-bottom: 30px;}
 	width: 290px;
 	vertical-align: top;
 	margin-right: 20px;
-	margin-bottom: 20px;
-}
+	margin-bottom: 20px;}
 .sale {
 transform: rotate(45deg);
 position: absolute;
@@ -909,50 +897,39 @@ text-decoration: line-through;
 font-weight: bold;
 float: right;}
 /*футер*/ 
+
 .page-footer-container{
-	overflow: hidden;
 	width: 960px;
 	margin: 0 auto;
-}
-
+overflow: hidden;}
 .page-footer { 
-	overflow: hidden;
 	background-color: #202e3b;
 }
 .page-footer img {
 	margin-right: 10px;
-	margin-top: 25px;
-}
+	margin-top: 20px;}
 .footer-logo p{
 	font-size: 24px;
 	text-decoration: none;
 	color: #ffcd34;
-	display: inline-block;
-}
+	display: inline-block;}
 .footer-logo {float: left;}
-.page-footer a {
-	text-decoration: none;
+.footer-nav{float: right;}
+.footer-nav li {list-style: none;
+	margin-right: 10px;
+	display: inline-block;
+	margin-top: 10px;
+	transition: border 0 linear;
+	padding: 10px;
+	border:2px solid transparent;}
+.footer-link {
 	color: #fff;
 	text-decoration: none;
-	font-size: 16px;
-	display: inline-block;
-}
-	
-}
-.page-footer li:hover{border:2px solid rgba(32,46,59,0.3);
-}
-.page-footer li {
-	margin-top: 10px;
-	list-style: none;
-	margin-right: 20px;
-	display: inline-block;
-	border-style: hidden;
-	box-sizing:border-box;
-	transition: border 0 linear;
-}
-.page-footer li:hover{border:2px solid rgba(255,255,255,0.3);}
-.footercallback {color: #ffcd34;}
-
+	font-size: 16px;	}
+.footer-nav li:hover{border:2px solid rgba(255,255,255,0.3);}
+.footer-nav li:active{border:2px solid rgba(255,255,255,0.6);}
+.footercallback {color: #ffcd34;
+text-decoration: none;}
 
 
 
